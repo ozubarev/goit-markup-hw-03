@@ -10,6 +10,12 @@
   --footer-address-color: rgba(255, 255, 255, 0.6);
 }
 
+body {
+  color: var(--primary-text-color);
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+}
+
 h1,
 h2,
 h3,
@@ -39,12 +45,6 @@ p {
   outline: 2px solid red;
 }
 
-body {
-  color: var(--primary-text-color);
-  font-family: "Roboto", sans-serif;
-  font-weight: 400;
-}
-
 .link {
   text-decoration: none;
 }
@@ -62,6 +62,15 @@ body {
   padding-bottom: 25px;
 }
 
+.header-container {
+  display: flex;
+  align-items: center;
+}
+
+.header-nav {
+  display: flex;
+}
+
 .logo {
   color: var(--logo-color);
   font-family: "Raleway";
@@ -69,10 +78,17 @@ body {
   font-size: 26px;
   line-height: 1.2;
   letter-spacing: 0.03em;
+  margin-right: 93px;
 }
 
 .logo-web {
   color: var(--accent-color);
+}
+
+.header-list,
+.kontacts-list {
+  display: flex;
+  align-items: center;
 }
 
 .header-list .link,
@@ -100,6 +116,15 @@ body {
 .kontacts-list .link:hover,
 .kontacts-list .link:focus {
   color: var(--accent-color);
+}
+
+.header-item,
+.kontakts-item:not(:last-child) {
+  margin-right: 50px;
+}
+
+.kontacts-list {
+  margin-left: auto;
 }
 
 /* Hero */
