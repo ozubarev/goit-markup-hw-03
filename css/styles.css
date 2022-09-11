@@ -411,6 +411,10 @@ img {
   margin-right: 30px;
 }
 
+.img-item:nth-child(-n + 6) {
+  margin-bottom: 30px;
+}
+
 .img-item .title {
   color: var(--title-text-color);
   font-weight: 700;
